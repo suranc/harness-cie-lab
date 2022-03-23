@@ -1,0 +1,23 @@
+connector:
+  name: github-suranc
+  identifier: githubsuranc
+  description:
+  orgIdentifier: default
+  projectIdentifier: bootcampcichris
+  type: Github
+  spec:
+    url: https://github.com/suranc
+    validationRepo: harness-cie-lab
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: suranc
+          tokenRef: githubpatsuranc
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: githubpatsuranc
+    executeOnDelegate: true
+    type: Account
