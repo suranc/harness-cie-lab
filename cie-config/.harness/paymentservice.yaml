@@ -1,5 +1,5 @@
 pipeline:
-    name: payment-service
+    name: payment-service2
     identifier: paymentservice
     allowStageExecutions: false
     projectIdentifier: bootcampcichris
